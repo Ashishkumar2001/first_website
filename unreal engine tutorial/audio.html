@@ -1,0 +1,103 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(57, 245, 220) , rgb(255, 153, 0));"> 
+      <br>
+   
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="grid.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="sound.html">Next >></a></li></button>
+     
+      </div>
+
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Audio Overflow And Sound Waves
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        This chapter will cover the use of audio within the Unreal Engine, so that you will be able to add dialogue, music, and sound effects to your game. The Audio folder in the Starter Content contains some existing audio Assets you can use as you read this chapter.
+        <br>
+        <br>
+        Unreal Engine uses .wav files, pronounced “wave,” to handle audio. If you have some audio you want to use that’s in a different format, such as an MP3, you will first need to convert it to a wave file, which will be covered later in the chapter.
+        <br>
+        <br>
+        When you import a wave file into Unreal Engine, it will become a Sound Wave Asset in the Content Browser, and its icon will have a black background with the actual waveform of that sound shown in white. If the wave has more than one channel, there will be a separate waveform for each channel.
+        <br>
+        <br>
+       <b class="subheading"> Ambient Sound Actor</b>
+        <br>
+        <br>
+        If you drag either a Sound Wave or a Sound Cue into your Level, it will create what’s called an Ambient Sound Actor.
+        <br>
+        <br>
+        <img class="img" src="https://media.springernature.com/lw785/springer-static/image/chp%3A10.1007%2F978-1-4842-5639-8_9/MediaObjects/491938_1_En_9_Fig3_HTML.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        It will automatically assign whatever Asset you dragged in, as the Asset for that Actor’s Sound property.
+        <br>
+        <br>
+        <img class="img" src="https://docs.unrealengine.com/Images/Engine/Audio/SoundActors/assign_soundasset.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        If you want to preview the sound, you can use the Play and Stop buttons, located above the Sound property. For Sound Cues, you can use the Edit button to open the Sound Cue in the Sound Cue Editor. If you want to create a new Sound Cue to use for the Actor, you can use the New button.
+        <br>
+        <br>
+       <b class="subheading"> Sound Wave Properties</b>
+       <br>
+       <br>
+        If you want to edit the properties of a Sound Wave, you simply need to double-click on it in the Content Browser.
+        <br>
+        <br>
+        You can set the compression of the wave using the Compression Quality property. This can have a value from 1 to 100, where lower numbers represent more compression and higher numbers represent better quality. So if you want the sound to sound as good as it can, and you’re not worried about the file size, you would want to set this to a high number. If you don’t care about the quality of the sound and you just need to save space somewhere, you could set this to a low number.
+        <br>
+        <br>
+        <b class="subheading"> Play Sound Nodes</b>
+        <br>
+        <br>
+        We already saw how to have a sound play immediately when the Level begins, but often times, you won’t want a sound to be played until certain conditions are met, or a certain event is triggered. In these cases, you can use Blueprints to specify when the sound should be played.
+        <br>
+        <br>
+If you go into the Level Blueprint, open the Node Menu, and type “Play Sound,” you will see several Nodes available for playing a sound. For one thing, you can choose to either play a sound, or spawn a sound. The difference is that when you spawn a sound you have control over it. You can choose to stop playing the sound at any point, or modify its properties. But when you play a sound, you don’t have any control over it. You can’t
+
+modify it or stop it. It will continue playing until it’s finished, and if it’s set to loop it will continue playing for the rest of the game.
+<br>
+<br>
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="grid.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="sound.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

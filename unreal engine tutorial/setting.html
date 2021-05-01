@@ -1,0 +1,74 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(243, 245, 227) , rgb(71, 97, 241));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="input.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="collision.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Setting Up Basic Character Movement
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        This section will go through the entire process of setting up basic Character movement. In addition to the jump functionality already covered, you will learn how to move your Character around using the W, A, S, D keys, or the left-analog stick of a gamepad, and how to make your Character look around using the mouse or the right-analog stick.
+        <br>
+        <br>
+      <b class="subheading">  Setting Up the Input Mapping</b>
+      <br>
+      <br>
+Go to Edit > Project Settings > Input. Setup an Action Mapping named “JumpAction” like was done in the previous section:
+<br>
+      <br>
+      <img class="img" src="data:image/jpeg;base64,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" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+Movement requires detecting a continuous input, so the movement behaviors will use Axis Mappings. Add an Axis Mapping and name it “LookUpDown.” To look up and down, we want our player to be able to use either the mouse, by dragging it up or down, or by using the right thumbstick of a gamepad, by tilting it up or down. So click the plus sign to the right of the mapping twice, and select “Mouse Y” for the first input and “Gamepad Right Thumbstick Y-Axis” for the second input.
+<br>
+<br>
+      <img class="img" src="https://docs.unrealengine.com/Images/Gameplay/Input/ActionMappings.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+
+<br>
+<br>
+
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+                        
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="input.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="collision.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

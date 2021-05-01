@@ -1,0 +1,130 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(132, 155, 52), rgba(59, 27, 148, 0.322));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="levels.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="leveleditor.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+        
+        
+
+      <h1 class="h1intro" ">
+     Actors
+      </h1>
+      <br>
+      
+
+      <p  class="pintro" >
+
+        An Actor is any object that can be added to a Level. Consider the objects on the left side of the Unreal Editor when you first start a project. If you click on the cube, for example, and drag it into the Level, it will become an Actor within the Level.
+        <br>
+        <br>
+        <img class="img" src="https://i2.wp.com/orfeasel.com/wp-content/uploads/2015/12/falling_actors.png?resize=799%2C473" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        Actors can be physical, visible objects within the Level, such as the cube, but they don’t have to be. For example, there is something called the Player Start Actor. Wherever
+
+        this Actor is placed within the Level is where the player will start when the Level begins. Even though the Player Start Actor isn’t a physical object within the Level, it is still considered to be an Actor.
+        <br>
+        <br>
+      <b class="subheading">  The Static Mesh Actor</b>
+      <br>
+      <br>
+The Static Mesh Actor is one of the most common types of Actors used to construct Levels in the Unreal Editor. If you’re not familiar, “mesh” is a 3D modeling term, and simply refers to a 3D object. When you’re playing a game, pretty much every object you see in the game will be a mesh. For example, you may see tree meshes, bird meshes, table meshes, chair meshes, and so on.
+<br>
+<br>
+Static meshes refer to meshes with no moving parts. For example, the cube and the other geometric shapes in that list.
+<br>
+<br>
+In the Starter Content that comes with the Unreal Engine, you have some Static Meshes in the form of furniture and some basic architectural objects.
+<br>
+<br>
+       <img class="img" src="https://docs.unrealengine.com/Images/Engine/Content/Types/StaticMeshes/HowTo/SettingMaterial/StaticMeshEditorMaterial.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+       <br>
+       <br>
+       So you have some Meshes to start with, but the vast majority of meshes used in games are created in external 3D modeling applications, such as Maya, 3D Studio Max, Blender, and so on, and then imported into the Unreal Editor. If you’re not a 3D-modeling artist, don’t despair; there is lots of great content available on the Internet for you to use, for free or for a price, and the final chapter of this book will show you where you can find some of that content.
+       <br>
+       <br>
+          <b class="subheading"> Geometry Brushes</b>
+          <br>
+       <br>
+A Geometry Brush, or simply “Brush” for short, is an Actor used to represent 3D space. There is a Box Brush, a Cone Brush, and so on. This is very similar to a Mesh, but there are a few key differences. These differences will be discussed in greater detail in a later chapter, so, for now, just know the following:
+<br>
+       <br>
+Brushes are only used for basic geometric shapes while Meshes can be crafted into objects with a high level of detail.
+<br>
+       <br>
+ Brushes are useful for quick level design but are less memory-efficient than Meshes. Therefore, Brushes are generally used to prototype Levels early on, and are then replaced with better-looking and better-performing Meshes for the final project.
+ <br>
+ <br>
+ <img class="img" src="https://answers.unrealengine.com/storage/temp/37771-subtraction.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+ <br>
+ <br>
+       <b class="subheading"> Materials</b>
+        <br>
+        <br>
+         Before moving on to the next Actor, you should know about a property that is common to both Meshes and Brushes - the Material of the Actor. A Material in Unreal Engine is an Asset you can apply to a surface to make that surface, and thus the geometry behind that surface, look like it’s made out of a certain substance. For example, if you apply a wood Material to a Cube Mesh, it will look like a wooden cube.
+         <br>
+        <br>
+        <img class="img" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-5639-8_2/MediaObjects/491938_1_En_2_Fig10_HTML.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        Meshes that are imported into the Unreal Editor may already have one or more Materials applied to them that get imported in alongside them. But you can replace these Materials if you wish.
+        <br>
+        <br>
+        <b class="subheading"> The Light Actor</b>
+        <br>
+        <br>
+A Light Actor in the Unreal Engine is used to represent visible light in the real world. Thanks to a lot of complex, mathematical algorithms that the Unreal Engine uses, it will behave much like light does in the real world. It will make objects that it hits more visible, depending on the intensity of the Light and the Material of the object. It will reflect off the surface of objects and light up other objects indirectly. It will cast a shadow if a visible, opaque object is in its path, and so on.
+<br>
+<br>
+Lights will be discussed in greater detail in a later chapter, but for now, just know that Light Actors are used to represent only the light itself, and not any of the objects from which the light emanates from. For example, if you wanted a working flashlight in your Level, you would need to combine a Light Actor with a Static Mesh Actor that looked like a flashlight. You would place the Light Actor at one end of the flashlight to make it look like the light was coming out of the flashlight.
+<br>
+<br>
+
+
+
+      </p>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="levels.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="leveleditor.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

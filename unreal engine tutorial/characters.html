@@ -1,0 +1,81 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(220, 240, 40), rgba(201, 71, 51, 0.911) , rgb(198, 200, 218));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="pawns.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="controllers.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Characters
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+        A Character is a type of Pawn that has all the features and functionality of a Pawn, plus additional ones. Specifically, a Character is a type of Pawn that is meant to have bipedal movement. Bipedal refers to walking on two legs, so you would use the Character class to represent humans and other creatures with human-like movement, like walking and jumping.
+        <br>
+        <br>
+      <b class="subheading>">  Character Components</b>
+      <br>
+      <br>
+The Character class comes with a few different Components. The Capsule Component is used as the boundaries of the Character for the purposes of detecting collisions.
+<br>
+      <br>
+      <img class="img" src="data:image/jpeg;base64,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" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Arrow Component is used to indicate which direction should be considered facing-forward for the Character. So if you had a Mesh of a human, you would want the arrow to be coming straight out of the front of its body.
+<br>
+<br>
+The Skeletal Mesh Component can be used to assign a Skeletal Mesh to the Character.
+<br>
+<br>
+ <b class="subheading"> Character Movement Component</b>
+ <br>
+ <br>
+Perhaps the most important component of the Character is the Character Movement Component. This is what gives the Character its movement capabilities. If you click on it, you can edit several properties relating to its movement.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/Animation/CharacterSetupOverview/GameMode.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Gravity Scale property determines how much of an effect gravity will have on this Character. Max Acceleration determines the maximum acceleration that this Character can achieve for any type of movement, whether it be walking, swimming, etc. Braking Friction Factor determines how much the Character will glide when attempting to slow down its speed.
+
+
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="pawns.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="controllers.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

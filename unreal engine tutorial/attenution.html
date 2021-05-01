@@ -1,0 +1,118 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(148, 245, 57) , rgb(162, 0, 255));"> 
+      <br>
+   
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="importing.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="downloading.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+      <br>
+      
+    <h1 class="h1intro" >
+Attenuation
+   </h1>
+    <br>
+    
+    <p  class="pintro" >
+
+      Attenuation is a scientific term that refers to the reduction in strength of a signal. In the case of an audio signal, this refers to the decrease in volume that occurs due to distance. In Unreal Engine, you have the ability to edit the attenuation properties of the sounds in your game, affecting the rate at which their volumes decrease across distances.
+      <br>
+      <br>
+      When it’s selected, the Ambient Sound Actor will have two spheres around it, an inner sphere and an outer sphere. At any point within the inner sphere, the sound will be heard at 100% volume. Going from the outer edge of the inner sphere, to the outer edge of the outer sphere, the volume will decrease from 100% to zero.
+      <br>
+      <br>
+      <img class="img" src="https://docs.unrealengine.com/Images/Engine/Audio/DistanceModelAttenuation/image_23.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+      <br>
+      <br>
+      In the Details Panel, under the Attenuation category, you can edit the sizes of these spheres. Note that the Override Attenuation property needs to be checked in order to edit the attenuation properties.
+      <br>
+      <br>
+      <img class="img" src="https://docs.unrealengine.com/Images/Engine/Audio/SoundActors/attenuation_settings.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+      <br>
+      <br>
+      To change the size of the inner sphere, the area in which the sound is heard at full volume, you use the Radius property. As you change the size of the inner sphere, the size of the outer sphere changes as well. This is because the outer sphere is defined by the Falloff Distance, the distance from the edge of the inner sphere to the edge of the outer sphere, as opposed to being defined by absolute size. When you adjust the Falloff Distance, it will change the size of the outer sphere, making the sound audible at greater distances.
+      <br>
+      <br>
+      You also have the ability to change the Attenuation Shape. By default, spheres are used, as this is the most natural way that sound will attenuate. But if, for example, you had a sound coming from within a rectangular room, you might want to use the Box shape in order to better fit the attenuation to the shape of the room.
+      <br>
+      <br>
+     <b class="subheading"> Attenuation Curves</b>
+     <br>
+     <br>
+As mentioned already, in the area described by the Falloff Distance, the sound will go from 100% volume to zero. But the rate at which this occurs can be adjusted, by setting the Distance Algorithm that should be used to define the Attenuation Curve. By default, this will use a Linear curve, meaning the volume will decrease evenly.
+<br>
+<br>
+Using the Logarithmic curve, the volume will decrease more rapidly at first, then the rate of decrease will slow as the sound approaches the bounds of the attenuation shape. The LogReverse curve, as its name indicates, is the reverse of that. The volume will decrease slowly at first, then more rapidly.
+<br>
+<br>
+The Inverse curve is similar to the Logarithmic curve except the volume decreases extremely rapidly at first, then very slowly for the remainder of the distance. The NaturalSound curve is somewhere in-between the Logarithmic curve and the Inverse curve, and is supposed to represent the most natural attenuation curve that sounds have in the real world.
+<br>
+<br>
+Finally, you can create your own custom attenuation curves, using the tool of the Custom Attenuation Curve property, which creates curves the same way the Timeline Editor did in the section on Timelines. So you hold down the Shift key and left-click in the graph to add a new point on the curve. Then you can click and drag on those points, or manually adjust their locations, to change the shape of the curve.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Support/Builds/ReleaseNotes/2015/4_9/image_55.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+<b class="subheading"> Spatialization</b>
+<br>
+<br>
+Another property of sound that can be set in the Attenuation category is Spatialization. This refers to sound being heard in 3D. For example, in the real world, if a sound is coming from your left, your brain can discern this because the sound will be slightly louder in your left ear than in your right ear. You can mimic this in a game by having sounds coming from the left be louder in the left speaker than in the right speaker. With the Allow Spatialization property checked, and the Spatialize property itself checked, the sound will exhibit that behavior in the game.
+<br>
+<br>
+One thing regarding Spatialization, that may seem counterintuitive at first, is that, in order for Spatialization
+
+to work, the sound must be mono, meaning it only has one channel of output. This is because sounds in stereo already have the relative volumes defined for each speaker output. So you need to use mono sounds, so that the Engine can determine the relative volumes itself, based on the rotation of your character relative to the sound.
+<br>
+<br>
+<b class="subheading"> Attenuation Hierarchy</b>
+<br>
+<br>
+At the highest level, you can create an Attenuation Asset, that can be saved and applied to multiple sound Assets. To create a new Sound Attenuation Asset, click Add New, go to Sounds, then select Sound Attenuation. You can double-click on it to edit its properties, which are the standard set of attenuation properties that were just covered.
+<br>
+<br>
+You can apply this Sound Attenuation to as many sound objects as you want, and then you only need to make changes for the entire group in one place. For example, if you open a Sound Cue, under the Attenuation Settings property, you can select the Sound Attenuation Asset you created and it will apply those attenuation properties to the Sound Cue.
+<br>
+<br>
+<img class="img" src="https://koenig-media.raywenderlich.com/uploads/2017/10/20.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+But if you decide you want to set different settings for the Sound Cue, you can check the Override Attenuation property and that will cause the Attenuation Settings property to be ignored, and will instead use the settings defined in the Sound Cue itself.
+<br>
+<br>
+Now let’s say you drag several instances of the Sound Cue into your Level and you want to change the settings for
+just one of the instances, without changing the settings of the Sound Cue itself. You can select that instance and then edit its Attenuation properties directly in the Details Panel by checking the Override Attenuation property. Or you can choose an existing Sound Attenuation Asset to use just for that instance.
+<br>
+<br>
+
+    </p>
+
+    <br>
+    <br>
+    <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="importing.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="downloading.html">Next >></a></li></button>
+         
+          </div>
+
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

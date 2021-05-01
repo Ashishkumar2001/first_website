@@ -1,0 +1,86 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(223, 57, 245) , rgb(3, 238, 255));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="check.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="grid.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Horizontal Box And Verttical Box
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        So far, the only Panel that has been covered is the Canvas Panel, which allows for absolute layout. This is good when you want a high level of manual control over the placement of widgets, but it’s not the best for aligning widgets.
+         <br>
+         <br>
+        There are several other Panels which are much more useful for aligning widgets, and one of those is the Horizontal Box. The Horizontal Box is comprised of a single row of slots of equal height. It’s useful for aligning widgets side-by-side.
+        <br>
+        <br>
+        For example, if you placed three Button Widgets into a Horizontal Box, they would stack up side-by-side. If you wanted to change their order, you could select one of them and use the arrows that appear to move them to the slot to the left or right. If you wanted to move all of them, you could move them all as a group by moving the Horizontal Box itself, and they would all remain aligned with each other.
+        <br>
+        <br>
+        <img class="img" src="data:image/jpeg;base64,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" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        If you selected one of the buttons, you would see that the properties in its Slot category are different than what we’ve been seeing because the button is in a Horizontal Box Slot as opposed to a Canvas Panel Slot.
+        <br>
+        <br>
+        <img class="img" src="https://docs.unrealengine.com/Images/Engine/UMG/UserGuide/BestPractices/Auto1.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        The Padding property can be used to add padding around the content of the slot.
+        <br>
+        <br>
+        By default, the Size property will be set to Auto. With it set to Auto, the slot will be just big enough to fit its contents. So if the width of a button inside the slot was increased, the slot would automatically widen to fit it. If Size is set to Fill, the slot will expand to take up the rest of the room available.
+        <br>
+        <br>
+        If other slots are set to Fill, the amount of space that each slot uses relative to each other is determined by the value to the right of the Fill button. This value can be any number between 0 and 1. For example, if there were three slots, and the first was set to 1.0 and the remaining two were set to 0.5, the first slot would be twice the size of the other two.
+        <br>
+        <br>
+        The next two properties determine how the content is aligned within the slot. By default, these are set to Fill. So note that the Fill settings of the Alignment properties refer
+to the content of the slot filling up the slot, while the Fill setting of the Size property refers to the slot filling up the Horizontal Box.
+<br>
+<br>
+The Vertical Box works just like the Horizontal Box, except the widgets placed in it will stack vertically instead.
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="check.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="grid.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

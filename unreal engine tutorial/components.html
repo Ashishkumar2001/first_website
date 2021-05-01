@@ -1,0 +1,88 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(251, 255, 0), rgba(185, 76, 167, 0.911) , rgb(161, 206, 206));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="player.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="volumes.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+            Components
+      </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        Components are various objects or functionality that can be attached to Actors. There are many different kinds of Components. Some of the types of Components are objects that are also used as Actors on their own. For example, you could attach a Static Mesh as a Component to another Actor. Or, you could attach a Light as a Component to another Actor.
+        <br>
+        <br>
+      <b class="subheading">  Adding Components</b>
+      <br>
+      <br>
+When you want to attach a Component to an Actor, select that Actor, then go over to the Details Panel and click on the green button that says Add Component. You’ll get a long list of different Components you can add, grouped by category. There will also be a search bar that you can use to quickly find a type of Component by name.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Gameplay/Networking/CharacterMovementComponent/CharacterMovement_ComponentAttached.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+To add a Static Mesh from the Content Browser as a Component, after clicking on Add Component, instead of choosing one of the pre-made meshes available in the Modes Panel, click on the generic “Static Mesh.” This will add an empty Static Mesh Component to the Actor. You
+
+can then choose which Static Mesh to use by using the Static Mesh section of the Details Panel.
+<br>
+<br>
+  <b class="subheading"> Rotating Movement Component</b>
+  <br>
+<br>
+A Rotating Movement Component will cause the Actor it is attached to, to rotate. It can be added by clicking “Add Component,” going down to the “Movement” category, and selecting “Rotating Movement.” If the Mobility setting of the Actor has been set to Moveable, it will begin to spin around as soon as the Level begins.
+<br>
+<br>
+The Rotating Movement Component has some properties you can edit. The first property is Rotation Rate, which specifies how much to rotate the Actor and in which direction. Whatever angle you enter, it will rotate the Actor that many degrees per second. For example, setting the Yaw rotation, which means rotation around the Z-axis, to 180 degrees will cause the Actor to spin one full 360-degree rotation, in that direction, every two seconds.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/Components/Movement/projectile.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+Another property you can edit is the Pivot Translation. By default, with this at (0,0,0), the Actor will rotate around its
+
+center. However, you can enter X, Y, and Z values to change the pivot point to a different location. For example, a value of 100 for the X-value will cause the Actor to rotate around a point 100 units, along the X-axis, from the center of the Actor.
+
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="player.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="volumes.html">Next >></a></li></button>
+         
+          </div>
+   
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+   
+          <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

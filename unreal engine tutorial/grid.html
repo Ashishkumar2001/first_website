@@ -1,0 +1,102 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(239, 255, 95) , rgb(0, 255, 34));"> 
+      <br>
+   
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="horizontal.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="audio.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Grid Panel And Uniform Grid Panel
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+      <b class="subheading">  Uniform Grid Panel</b>
+      <br>
+      <br>
+        The Uniform Grid Panel can have both rows and columns of slots and what makes it special is that all of its slots will always be the same size as each other.
+        <br>
+        <br>
+        By default, children added to a Uniform Grid Panel will be placed in Row 0, Column 0, which will always be the upper-leftmost slot of the Panel. If you want to place a child in a different row or column, you can move it using the arrow buttons, or use the Row and Column properties in the Slot category. Also, by default, content will be aligned to the left and top of the slot.
+        <br>
+        <br>
+        <img class="img" src="https://forums.unrealengine.com/filedata/fetch?id=1125875&d=1568828980" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        The Uniform Grid Panel has three unique properties within a category called Child Layout. The first is Slot Padding, which will simply apply the same amount of padding to each of the slots.
+        <br>
+        <br>
+        The next two properties, the Minimum Desired Slot Width and Minimum Desired Slot Height, apply when the Panel’s Size to Content property is checked. With Size to Property unchecked, the content is sized to match the size of the slots. But with Size to Content checked, the slots will resize to match the sizes of the content. The “Minimum Desired” properties, however, can override the Size to Content property, if the content doesn’t force the slot to be at least the minimum size specified.
+        <br>
+        <br>
+      <b class="subheading">  Grid Panel</b>
+      <br>
+      <br>
+The Grid Panel is similar to the Uniform Grid Panel, but its slots can be different sizes from each other.
+<br>
+<br>
+The easiest way to use a Grid Panel is to first specify the number of rows and columns it will have and then add the content. To add rows and columns, use the Fill Rules category. For example, to make a 2x2 grid, click the add button of the Column Fill property twice and click the add button of the Row Fill property twice.
+<br>
+<br>
+You can specify the amount of the space each row or column should occupy relative to each other by using the textboxes to the right. These work just like the Horizontal
+or Vertical Box did, with the exception that these values can be set to any number, not just those between 0 and 1.
+<br>
+<br>
+<b class="subheading"> Grid Slot Properties</b>
+<br>
+<br>
+The first two properties of a Grid Slot are Horizontal Alignment and Vertical Alignment. These are used to change the alignment of the content within the slot. By default, they are set to Fill.
+<br>
+<br>
+<img class="img" src="https://lh3.googleusercontent.com/proxy/5jwir_oAXRuOjuwp1LgBniTdX0WfyUi0IK1KCtjSC-FYfBKS82q_6oNyXhTailIZ4PI-omLIJ04FFfzh3OCbcLTogKKK" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+In addition to using the arrows to position content, you can directly set the row and column it should be placed in by setting the Row and/or Column property. Just like the Uniform Grid Panel, the Grid Panel is zero-based, so 0 is the first row, and 1 is the second row and so on.
+numbers will be drawn last, and thus drawn on top of other widgets in slots with lower numbers. Also, if a user clicks in the overlapping area, the widget in the slot with the highest number will register the click.
+<br>
+<br>
+The final property, Nudge, is used to add an offset to the location of the slot. So if you wanted to move a slot to the right 20 units, you would enter “20” for the X value. Note that you need to compile the Blueprint in order for changes to the Nudge property to be reflected in the Visual Designer.
+<br>
+<br>
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="horizontal.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="audio.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

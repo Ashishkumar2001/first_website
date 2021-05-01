@@ -1,0 +1,91 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(238, 111, 189) , rgb(47, 226, 137));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="setting.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="causing.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Collision Overview
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        In the Details Panel, under the Collision category, you can edit the Collision properties of an Actor.
+        <br>
+        <br>
+      <b class="subheading">   Hit Events & Overlap Events</b>
+      <br>
+      <br>
+        If two Actors are set to block one another when they come into contact, then, when they collide, this will generate a Hit Event if Hit Events are enabled for that Actor.
+        <br>
+        <br>
+To enable Hit Events for an Actor, check the Simulation Generates Hit Events checkbox under the Collision category. For an Actor’s Hit Event to fire, only the Simulation Generates Hit Events checkbox for that Actor needs to be checked. The other Actor’s checkbox only needs to be checked if you want that Actor’s Hit Event to fire as well.
+<br>
+        <br>
+        <img class="img" src="https://docs.unrealengine.com/Images/Engine/Content/Types/StaticMeshes/HowTo/SettingCollision/PhysicsDetailsPanel.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+On the other hand, if two Actors are set to overlap with one another, then, when they overlap, this will generate an Overlap Event if Overlap Events are enabled for both of the Actors.
+<br>
+<br>
+<b class="subheading"> Collision Presets</b>
+<br>
+<br>
+When you expand the menu under the Collision Presets property, you will find a long list of collision properties that can be automatically set by choosing from a list of presets. Or they can be individually set by choosing “Custom” and setting them one-by-one.
+<br>
+<br>
+<b class="subheading"> Collision Enabled Property</b>
+<br>
+<br>
+The Collision Enabled property is another way to set the block and/or overlap behaviors of the Actor. This has four possible settings. When this is set to Collision Enabled, it
+means that the Actor is enabled for both Query Collisions and Physics Collisions. Query Collisions just refer to overlap collisions and Physics Collisions refer to blocking collisions.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/Physics/Collision/Reference/collProp.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+With Collision Enabled set to Physics Only, the Actor will be able to block other Actors, and fire Hit Events, but it won’t be able to fire Overlap Events. If it is set to Query Only, the Actor will be able to fire Overlap Events but won’t be able to block other Actors and won’t be able to fire Hit Events. If it is set to No Collision, the Actor won’t be able to block other Actors and won’t be able to fire Overlap Events or Hit Events.
+<br>
+<br>
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="setting.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="causing.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

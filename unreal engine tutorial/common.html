@@ -1,0 +1,97 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(95, 216, 91) , rgb(0, 195, 255));"> 
+      <br>
+   
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="canvas.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="visual.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Common Widget Properties
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        There are four categories in the Details Panel that are common to all widgets, and those are Behavior, Performance, Render Transform, and Navigation.
+        <br>
+        <br>
+      <b class="subheading">  Behavior Category</b>
+      <br>
+      <br>
+Starting with the Behavior category, the first property is Is Enabled. If this is unchecked, it will disable the widget, meaning it cannot be interacted with by the user. So widgets like buttons, checkboxes, sliders, and so on, will not be able to receive input. For example, a disabled button will be a darker shade of grey than an enabled button, and if you click on it, it won’t change color like an enabled button because it is not registering the click.
+<br>
+<br>
+<img class="img" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-5639-8_8/MediaObjects/491938_1_En_8_Fig18_HTML.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+<b class="subheading"> Performance Category</b>
+<br>
+<br>
+The next category, Performance, has just one property, Is Volatile.
+<br>
+<br>
+The Is Volatile property is used with the Invalidation Box widget in the Optimization category of the Palette. The purpose of the Invalidation Box is to cache its children widgets, meaning save them in memory. This will increase performance if those widgets don’t change often. But if one of those child widgets does change often, such as one that animates and needs to be drawn differently each frame, you would not want to try to cache that widget. In that scenario, you would set the widget’s Is Volatile property to True, to prevent it from being cached.
+<br>
+<br>
+<b class="subheading"> Render Transform Category</b>
+<br>
+<br>
+The next category is Render Transform. If you expand the Transform menu, you will see four properties, Translation, Scale, Shear, and Angle.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/UMG/UserGuide/Styling/RenderTransformMenu.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+<b class="subheading"> Navigation Category</b>
+<br>
+<br>
+The final category is Navigation. This category affects how the user can navigate to the different widgets using their keyboard.
+<br>
+<br>
+<img class="img" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-5639-8_8/MediaObjects/491938_1_En_8_Fig28_HTML.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+By default, all the properties here are set to Escape. Escape basically means that you are able to escape that widget in that direction. For example, if a button’s Left property is set to Escape, this means that if that button has focus and you press left on the keyboard, focus will move left to the next widget. But if you were to change the Left property to Stop instead, then navigation can no longer move to the left through the widget.
+<br>
+<br>
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="canvas.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="visual.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

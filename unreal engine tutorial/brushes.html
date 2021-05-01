@@ -1,0 +1,67 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(255, 97, 5), rgba(27, 7, 139, 0.911) , rgb(240, 100, 57));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="static.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="material.html">Next >></a></li></button>
+     
+      </div>
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+         Brushes
+      </h1>
+      <br>
+      
+      <p  class="pintro" >
+        In the world of 3D modeling, a Brush is simply a 3D area of space. This is nearly identical to our understanding of what a Mesh is, but there are several key differences between Brushes and Meshes.
+        <br>
+        <br>
+       <b class="subheading"> Brushes vs Meshes</b>
+       <br>
+       <br>
+        The first difference is that Brushes are used for more basic shapes. In the Modes Panel, in the BSP tab, you can see the Brushes that are available. There are some basic geometric shapes and some Brushes in the shape of stairs. In the Basic tab, we also have some Static Meshes available in the form of basic geometric shapes, but Meshes can be much more complex than this, taking the form of furniture, cars, people, etc.
+        <br>
+        <br>
+        <img class="img" src="https://answers.unrealengine.com/storage/temp/23109-placedmodebsp.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        The second key difference is in how the Unreal Engine handles Brushes and Meshes in memory. For example, let's say you make several copies of a Brush Actor. Each copy made gets stored in memory, and thus each copy made increases the memory demands of the game. However, no matter how many copies of a Mesh you make, it will not increase the memory needed at all. This is because a single Mesh only gets stored in memory once, no matter how many instances of it there are in your Level.
+
+
+
+      </p>
+      <br>
+      <br>
+      <br>
+        <br>
+        <br>
+        <br>
+
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="static.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="material.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+      <br>
+      <br>
+        <br>
+        <br>
+        <br>
+
+
+      <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

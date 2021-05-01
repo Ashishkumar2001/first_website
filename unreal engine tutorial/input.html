@@ -1,0 +1,85 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(220, 240, 40) , rgb(241, 71, 184));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="controllers.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="setting.html">Next >></a></li></button>
+     
+      </div>
+
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Input Mapping
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        Imagine you were creating a multiplayer game that could support eight players. You would need eight different Player Controllers - one for each human player that is playing the game. If each Player Controller contained the Jump functionality from the previous section, and you wanted to change what key caused the player to jump from the Space Bar to some other key, you would need to make that change eight times.
+        <br>
+        <br>
+        But with Input Mapping, you can define what key or keys correspond to what behavior by mapping the keys to a name that you create. Then, you can refer to that name in Player Controller Blueprints instead of hardcoding the specific key to use. If you ever want to change which key corresponds to which action, you will only need to make that change in one place.
+        <br>
+        <br>
+      <b class="subheading">  Action Mappings vs Axis Mappings</b>
+      <br>
+      <br>
+In the Level Editor, go to Edit > Project Settings. Under the Engine category, click on Input. This will bring up the screen where you can create Input Mappings. These are divided into two categories - Action Mappings and Axis Mappings.
+<br>
+      <br>
+      <img class="img" src="https://docs.unrealengine.com/Images/Gameplay/Input/ActionMappings.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+Action Mappings are for key presses and releases where holding down the key for any length of time doesn’t make a difference. For example, if you wanted your character to throw a punch and you wanted the player to have to press a button for each punch, you would use an Action Mapping.
+<br>
+<br>
+Axis Mappings are used in situations where holding down the key provides a continuous stream of input. For example, you would often use this for walking, where if you hold the key continuously, the character will continue to walk until you let go.
+<br>
+<br>
+ <b class="subheadinh"> Creating New Input Mappings</b>
+ <br>
+<br>
+To create a new mapping, under the Bindings category, click on the plus sign next to the type of mapping you want to create. If you don’t see the new mapping right away, click on the triangle to the left of the label to expand the section.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Gameplay/Input/ActionMappings.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="controllers.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="setting.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

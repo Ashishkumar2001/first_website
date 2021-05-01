@@ -1,0 +1,82 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(183, 0, 255), rgba(23, 207, 231, 0.911) , rgb(207, 209, 191));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="functions.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="accessing.html">Next >></a></li></button>
+     
+      </div>
+
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+    Flow Controls
+      </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        In the Node Menu, under “Utilities,” there is a category called Flow Control. This category contains several different Nodes that you can use to control the flow of execution in your Blueprints. This is essential to creating logic.
+    <br>
+    <br>
+
+        <b class="subheading">  Branch Node</b>
+        <br>
+        <br>
+        
+        The first node in the list is the Branch Node. The Branch Node takes in a Boolean value as its input and then continues execution either through the True output execution pin if the Boolean value is True, or through the False output execution pin if the Boolean value is False.
+        <br>
+        <br>
+        <img class="img" src="https://docs.unrealengine.com/Images/Engine/Blueprints/UserGuide/FlowControl/Sequence_Network.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+       <b class="subheading"> Do N Node</b>
+       <br>
+        <br>
+        The Do N Node means “Do N times” where “N” is the number of times this Node should allow execution to pass through it before it begins to block execution. For example, if N is 5, then the first 5 times execution flows into the Enter pin it will flow out of the Exit pin. However, the 6th time and beyond that, the flow will not continue out of the Exit pin.
+        <br>
+        <br>
+        <img class="img" src="https://cdn1.epicgames.com/ue/item/DonMeshPainting_Screenshot_5-1920x1080-1154aa2c2d33f7a4cf31477e0da58c48.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+        So execution will be blocked in a Do N Node after the Nth time the Node has been activated, unless execution flows
+
+into the Reset pin of the Node. When execution flows into the Reset pin, the counter will be reset to 0 and the Node will be able to execute N more times.
+The Counter pin will output an Integer representing
+        
+
+      </p>
+   <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="functions.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="accessing.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+    
+ <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

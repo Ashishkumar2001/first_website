@@ -1,0 +1,100 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(183, 0, 255), rgba(30, 199, 14, 0.911) , rgb(134, 116, 39));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="volumes.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="variables.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+   Introduction To Blueprint
+      </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        In the Unreal Engine, a Blueprint is an Asset that contains data and instructions.
+        
+      <br>
+      <br>
+      Using Blueprints, you can keep track of health, energy, score, etc. You can also specify game logic, like the requirements for completing a puzzle, what happens when that puzzle is complete, what happens when you shoot an enemy, and so on.
+      <br>
+      <br>
+    <b class="subheading">  Level Blueprint vs Blueprint Classes</b>
+    <br>
+    <br>
+There are two main types of Blueprints - The Level Blueprint and Blueprint Classes.
+<br>
+<br>
+A Level Blueprint is used to hold data and instructions for a particular Level. It might hold data such as the time remaining to complete the Level, or the number of keys you’ve collected in that Level, and so on. It’s also used to store instructions that pertain only to that Level. For
+example, let’s say there was a spot in a Level where there was a bridge and when the player crosses that bridge, a meteor flies across the sky. If that’s a one-time unique occurrence just for that spot in that Level, it would make sense to store those instructions in the Level Blueprint for that Level.
+<br>
+<br>
+  <b class="subheading"> Level Blueprint Editor</b>
+  <br>
+<br>
+To open a Level Blueprint, go up to the Toolbar and expand the menu of the Blueprints button. Then click on “Open Level Blueprint.” This will open the Level Blueprint Editor.
+<br>
+<br>
+  <b class="subheading"> Event Graph</b>
+  <br>
+<br>
+Inside the Level Blueprint Editor is the Event Graph. The Event Graph is the area of a Blueprint where you script the logic. If you’re a programmer, the logic can be scripted in pure code using C++. However, Epic Games has developed a visual scripting system that allows non-programmers to script logic and can be convenient even for experienced programmers.
+<br>
+<br>
+ <b class="subheading"> Nodes</b>
+ <br>
+<br>
+The scripting system works by using various Nodes, that each serve a specific purpose, and connecting those Nodes together. By default, the Level Blueprint starts off with two commonly used Nodes in the Graph. They are disabled to start with, but can be used right away by connecting them to another Node.
+<br>
+<br>
+The first Node is the Event BeginPlay Node. An Event Node is a Node that is activated when a certain event occurs. So an Event BeginPlay Node, inside of a Level Blueprint, will be activated by the event of the Level first starting. You can recognize an Event Node by its top strip which will be the color red and will have an icon of an arrow inside of a diamond symbol.
+<br>
+<br>
+<img class="img" src="https://i.imgur.com/VLPPwl0.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+ <b class="subheading"> Compiling</b>
+ <br>
+<br>
+Before you can test any new logic you have created, you must compile the Blueprint. Compiling just means that the Engine will convert the logic into machine code that the computer can understand. In order to compile the Blueprint, simply go up to the toolbar of the Blueprint Editor and click the Compile button. If there is any new logic that hasn’t been compiled yet, the Compile button will contain a question-mark icon.
+<br>
+<br>
+<img class="img" src="https://forums.unrealengine.com/filedata/fetch?id=1178972&d=1458909908" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+
+      </p>
+
+      <br>
+<br><br>
+<br><br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="volumes.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="variables.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br><br>
+          <br><br>
+          <br>
+    
+          <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

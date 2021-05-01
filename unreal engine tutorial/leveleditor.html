@@ -1,0 +1,133 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(40, 41, 35), rgba(255, 102, 0, 0.911));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="actors.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="place.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" ">
+      Level Editor Overview
+      </h1>
+      <br>
+      
+      <p  class="pintro" >
+       
+        This section will give a basic overview of the Level Editor without going into too much detail. First, we will spend a few moments discussing some terminology which can be confusing.
+        <br>
+        <br>
+         <b class="subheading"> Unreal Engine vs the Unreal Editor</b>
+         <br>
+        <br>
+The Unreal Engine is an application that is used to run games. It’s a program that has algorithms for determining how objects are rendered frame by frame, how lighting should affect them, and so on. The Unreal Editor is an application for creating games that can run on the Unreal Engine. So that’s what you’re learning in this book - how to create games with the Unreal Editor that can be played using the Unreal Engine.
+<br>
+<br>
+When you hit the Play button to play your game, the Unreal Editor is using the Unreal Engine to run the game. To summarize, the Unreal Editor is used for creating games, while the Unreal Engine is used for running those games.
+<br>
+        <br>
+       <b class="subheading">Unreal Editor vs the Level Editor</b>
+       <br>
+        <br>
+The Unreal Editor has several sub-editors within it, and one of those sub-editors is the Level Editor. What can be confusing about this, however, is that the Level Editor essentially acts as the home screen for the Unreal Editor. So the main window of the Unreal Editor is the Level Editor itself. All of the other sub-editors will open in their own separate windows. For example, if you double-click on a Material, it will open the Material Editor in a separate window.
+<br>
+        <br>
+       <b class="subheading"> Panels of the Level Editor</b>
+       <br>
+        <br>
+The large rectangle in the middle is the Viewport. The thin strip above that is the Toolbar. At the bottom of the screen is the Content Browser. On the left side of the screen is the Modes Panel. On the right side of the screen is the World Outliner at the top, and below that, the Details Panel.
+<br>
+<br>
+<img class="img" src="https://media.springernature.com/original/springer-static/image/chp%3A10.1007%2F978-1-4842-5639-8_3/MediaObjects/491938_1_En_3_Fig1_HTML.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+Keep in mind that these panels can be moved and resized, and also that this is just the default layout of the current release and could change in future releases.
+<br>
+<br>
+The Viewport is used to give you a visual representation of your game. You will see a representation of the environment you create, along with characters and objects that players will see in the game. You will also be able to see certain objects in the Viewport that won’t be visible when playing the game, such as cameras, event triggers,
+and invisible barriers. You can also manipulate objects directly through the Viewport.
+<br>
+<br>
+<img class="img" src="https://i.ytimg.com/vi/qJnJjWfieiM/maxresdefault.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Toolbar is a strip of buttons meant to give you quick access to common and/or important functions, such as saving, changing settings, or playing your game.
+<br>
+<br>
+<img class="img" src="https://static.packt-cdn.com/products/9781785883569/graphics/B05244_6_02.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Content Browser is for storing and organizing content that you can add to your game. This includes content such as Meshes, Materials, music, sound effects, visual effects, and more. Some types of content can be created directly within the Unreal Editor. But you can also create content outside of the Unreal Editor and then import it in. For example, you could create a motorcycle using third-party 3D-modeling software, and then use the Content Browser to import the motorcycle into your project. There is also a lot of already made content available on the Internet, for free or for a price, that you can download and then import into the Content Browser.
+<br>
+<br>
+<img class="img" src="https://forums.unrealengine.com/filedata/fetch?id=1554136&d=1542750177" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Modes Panel allows you to change the mode of the Level Editor to various modes that make it easier to perform certain tasks. These tasks include dragging and dropping objects into your Level, adding color and texture to those objects, modifying the geometry of those objects, editing the landscape of your Level, and adding foliage, meaning plant life, to your Level.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/UI/LevelEditor/Modes/LE_Tools2.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Details Panel allows you to view and edit the details of whatever object is currently selected, such as the object’s size and location.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Engine/UI/LevelEditor/Details/details_panel.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+   <b class="subheading"> Customizing the Interface</b>
+   <br>
+<br>
+The Unreal Editor gives you a great deal of control over how the interface looks. One thing you can do is resize the individual panels. To do this, simply click on the edge
+
+between two panels and drag, and you can make them any size you wish.
+<br>
+<br>
+You also have the option to move panels around. If you click on the tab of the panel and drag, you can drag it to wherever you want on the screen.
+<br>
+<br>
+You can also choose which panels are open at any given time. To close a panel, simply click on the “X” on the right side of the panel’s tab. To open a panel, go to the menu bar, and under Window, select the panel you wish to open.
+<br>
+<br>
+Finally, you can choose to show or hide the tabs of each panel. To hide the tab, right-click on it, and choose Hide Tab. To show the tab, click on the yellow triangle in the upper-left corner of the panel. You may want to have all the tabs showing while you are still learning the names of the panels, and then once you have them memorized, close the tabs in order to have a little more screen room to work with.
+
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="actors.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="place.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+      <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(191, 241, 250) , rgb(251, 255, 0));"> 
+      <br>
+   
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="root.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="common.html">Next >></a></li></button>
+     
+      </div>
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Canvas Paral
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        Whenever you create a new Widget Blueprint, it will automatically add a Canvas Panel to the Root Widget by default. However, you can delete it if you want, and you can manually add Canvas Panels to the layout via the Panel category of the Palette.
+        <br>
+        <br>
+        In the context of UMG, a Panel is a container that is useful for aligning widgets and moving widgets as a group. Each Panel has its own unique type of slot, which gives its children different positioning and sizing capabilities.
+        <br>
+        <br>
+      <b class="subheading">  Canvas Panel Slot Properties</b>
+      <br>
+        <br>
+You can position a widget inside of a Canvas Panel using the Position X and Position Y properties. You can size the widget to an exact size using the Size X and Size Y properties.
+<br>
+        <br>
+        <img class="img" src="https://koenig-media.raywenderlich.com/uploads/2017/07/5.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+        <br>
+        <br>
+       <b class="subheading"> Anchors</b>
+        <br>
+        <br>
+        Up at the top of the Slot category are Anchors. Anchors are a way to specify where on the edge of the Panel the location of a Widget should be measured from, in the scenario that the window size or screen size changes.
+<br>
+<br>
+An Anchor Medallion will appear in the spot where the Slot is anchored. For example, if a button is placed into a slot and anchored to the top-left of the screen, an Anchor Medallion will appear in the top-left corner of the Visual Designer. If you ran the game, no matter how you resized the window, the button would stay in the same position relative to the top-left corner.
+<br>
+<br>
+<b class="subheading"> ZOrder</b>
+<br>
+<br>
+The ZOrder property determines the order in which widgets get drawn to the screen and, thus, for widgets in the same location, determines which widget overlaps which. Lower numbers get drawn first.
+<br>
+<br>
+If you have a button whose ZOrder is 0, and some text whose ZOrder is 1, then the button will be drawn first, followed by the text. So if these are in the same location, the text will overlap the button since it gets drawn last.
+<br>
+<br>
+<img class="img" src="https://answers.unrealengine.com/storage/temp/19876-clickoff1.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="root.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="common.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>

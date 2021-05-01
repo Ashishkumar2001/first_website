@@ -1,0 +1,94 @@
+<html>
+    <head>
+      <title>
+
+      </title>
+
+      <link rel="stylesheet" href="unreal engine tutorial.css">
+    </head>
+    <body style="background: linear-gradient(to top left, rgb(204, 238, 111) , rgb(190, 16, 196));"> 
+      <br>
+      <div class="divintro" >
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="collision.html"><< Prev.</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+        <button class="buttonintro"><li class="liintro"><a class="aintro" href="umg.html">Next >></a></li></button>
+     
+      </div>
+
+
+      <br>
+        <br>
+        
+      <h1 class="h1intro" >
+Causing Damage Due To Collision
+     </h1>
+      <br>
+      
+      <p  class="pintro" >
+
+        This section will demonstrate a practical use for collisions by showing you how you could deduct health from a Character when it collides with an enemy or some harmful object. Before we get to the example, however, there are two more Nodes you should be familiar with – the Event Hit Node and the Apply Damage Node.
+     <br>
+     <br>
+        <b class="subheading">  Event Hit Node</b>
+      <br>
+      <br>
+An Event Hit Node, inside an Actor’s Blueprint, will fire any time that Actor registers a Hit Event. The Node contains several output pins.
+<br>
+      <br>
+      <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT7mH6Rr9S4F6VEX8hpOFh5R0QbTXkGgJ0mbw&usqp=CAU" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The My Comp pin will return which Component of this Actor was hit. The Other pin will return the other Actor that collided with this Actor. The Other Comp pin will return the Component of the other Actor that was hit.
+<br>
+<br>
+The Self Moved pin is a Boolean that will tell you if the collision was directly caused by the player. If the player collides with the Actor, or if a projectile fired from the player collides with the Actor, this will return False. For any other collisions, this will return True.
+<br>
+<br>
+The Hit Location pin is a Vector value that will return the X, Y, and Z coordinates of the location where the hit occurred. The Hit Normal pin is a Vector value that will return the direction of the impact. So it will return the angles relative to the X, Y, and Z axes. The Normal Impulse pin will return how much force the impact had in the X, Y, and Z directions.
+<br>
+<br>
+The Hit pin contains even more data about the collision. If you drag off the pin and select “Break Hit Result”, it will create a Break Hit Result Node containing many more details about the collision should you need to access that information.
+<br>
+<br>
+<img class="img" src="https://docs.unrealengine.com/Images/Gameplay/HowTo/UseOnHit/Blueprints/OnHit8.jpg" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+<b class="subheading"> Apply Damage Node</b>
+<br>
+<br>
+The Apply Damage Node will activate a Damage Event for whatever Actor is passed into its Damaged Actor pin. The Apply Damage Node will also pass the data from its other pins to the Damage Event. It is then up to the Actor receiving the Damage to define in its Blueprint how it should handle that incoming information.
+<br>
+<br>
+<img class="img" src="https://answers.unrealengine.com/storage/temp/9407-untitled.png" width="700px" height="600px" style="border-radius: 20px; margin-left: 100px;  box-shadow: 10px 10px 20px black;" />
+<br>
+<br>
+The Base Damage pin is used to specify how much Damage should be applied. So you would specify higher Base Damages for Actors that should be more powerful or harmful. Note that this value is arbitrary until you give it some meaning with further logic.
+<br>
+<br>
+      </p>
+
+      <br>
+      <br>
+      <br>
+<br>
+<br>
+<br>
+
+        <div class="divintro" >
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="collision.html"><< Prev.</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="start.html">Home</a></li></button>
+            <button class="buttonintro"><li class="liintro"><a class="aintro" href="umg.html">Next >></a></li></button>
+         
+          </div>
+
+          <br>
+          <br>
+          <br>
+    <br>
+    <br>
+    <br>
+    
+
+    <script type="text/javascript" src="unreal engine tutorial.js"></script>
+    </body>
+</html>
